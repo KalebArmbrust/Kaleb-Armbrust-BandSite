@@ -10,7 +10,6 @@ body {
 }
 
 .header {
-    font-family: $font-family;
 
     &-menu {
         display: flex;
@@ -45,8 +44,9 @@ body {
             width: 20vw;
             list-style-type: none;
             @include mobile {
-                width: 90%;
-                height: 20%;
+                box-sizing: border-box;
+                width: 100vw;
+                height: 20vh;
             }
 
             &-item {
@@ -54,7 +54,8 @@ body {
                     padding: 20%;
                 }
                 @include mobile {
-                    width: 3 0%;
+                    font-size: $font-size-m2;
+                    width: 30%;
                     height: 55%;
                     padding: 0;
                 }
@@ -73,7 +74,7 @@ body {
 
 .active {
     border-bottom: 4px solid $header-text;
-    padding-bottom: 34%;
+    padding-bottom: 32%;
     @include tablet {
         padding-bottom: 24%;
     }
@@ -109,7 +110,7 @@ body {
         margin: 0;
         color: $header-text;
         font-size: $font-size-h1;
-        font-weight: 900;
+        font-family: $bold-font;
         height: 10vh;
         width: 45vw;
         position: absolute;
@@ -123,7 +124,7 @@ body {
         }
 
         @include mobile {
-            font-size: $font-size-h3;
+            font-size: $font-size-m1;
             width: 80vw;
             height: 15vh;
             bottom: 40%;
@@ -144,7 +145,7 @@ body {
             margin-left: 5%;
         }
         @include mobile {
-            font-size: $font-size-h3;
+            font-size: $font-size-m1;
         }
     }
     
@@ -187,6 +188,8 @@ body {
         
         &__words {
             font-size: $font-size-h3;
+            font-family: $bold-font;
+            color: $paragraph-text;
             height: 10vh;
             width: 57vw;
             margin: 0;
@@ -204,11 +207,15 @@ body {
 
         &__speaker {
             font-size: $font-size-h4;
+            font-family: $demi-bold-font;
+            color: $paragraph-text;
             @include tablet {
                 margin-left: 5%;
             }
             @include mobile {
                 font-size: $font-size-p;
+                font-family: $bold-font;
+                color: $paragraph-text;
             }
             }
     }
@@ -224,6 +231,8 @@ body {
         
         &__title {
             font-size: $font-size-h3;
+            font-family: $bold-font;
+            color: $paragraph-text;
             width: 56%;
             @include tablet {
                 margin-left: 5%;
@@ -236,6 +245,7 @@ body {
     
         &__writing {
             font-size: $font-size-p;
+            color: $paragraph-text;
             margin-right: 2%;
             @include tablet {
                 margin-left: 5%;
@@ -359,6 +369,7 @@ body {
         &__title {
             margin-right: 7%;
             font-size: 1.7rem;
+            font-family: $bold-font;
             @include tablet {
                 font-size: $font-size-h2;
                 width: 30%;
@@ -406,6 +417,7 @@ body {
     &-agent {
         &__name {
             font-size: $font-size-h4;
+            font-family: $bold-font;
         }
 
         &__location {
@@ -436,7 +448,7 @@ body {
         padding-bottom: 1%;
         font-size: $font-size-labels;
         @include tablet {
-            margin-left: 3.5%;
+            margin-left: 3%;
         }
         @include mobile {
             margin-left: 5%;
