@@ -1,0 +1,445 @@
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+/******************************** NAV *******************************/
+body {
+    font-family: $font-family;
+    margin: 0;
+}
+
+.header {
+    font-family: $font-family;
+
+    &-menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        background-color: $nav-background;
+        border-bottom: 1px solid $text-label;
+        @include mobile {
+            flex-direction: column;
+            height: 14.5vh;
+            width: 100vw;
+        }
+        
+        &__logo {
+            padding-left: 15%;
+
+            @include tablet {
+                padding-left: 5%;
+                padding-right: 7%;
+            }
+            @include mobile {
+                padding-top: 7%;
+            }
+        }
+    
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 20vw;
+            list-style-type: none;
+            @include mobile {
+                width: 90%;
+                height: 20%;
+            }
+
+            &-item {
+                @include tablet {
+                    padding: 20%;
+                }
+                @include mobile {
+                    width: 3 0%;
+                    height: 55%;
+                    padding: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                color: $header-text;
+                }
+            
+        }
+    
+    }
+    
+}
+
+.active {
+    border-bottom: 4px solid $header-text;
+    padding-bottom: 34%;
+    @include tablet {
+        padding-bottom: 24%;
+    }
+    @include mobile {
+        padding-bottom: 10%;
+    }
+}
+
+/******************************** HERO *******************************/
+.hero {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+
+    @include tablet {
+        height: 80vh;
+    }
+
+    @include mobile {
+        height: 50vh;
+    }
+
+    &__image {
+        background-image: url(../assets/Images/oscar-keys-ojVMh1QTVGY-unsplash.jpg);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    &__title {
+        margin: 0;
+        color: $header-text;
+        font-size: $font-size-h1;
+        font-weight: 900;
+        height: 10vh;
+        width: 45vw;
+        position: absolute;
+        bottom: 66%;
+        left: 15%;
+
+        @include tablet {
+            width: 70vw;
+            bottom: 60%;
+            left: 5%;
+        }
+
+        @include mobile {
+            font-size: $font-size-h3;
+            width: 80vw;
+            height: 15vh;
+            bottom: 40%;
+        }
+    }
+    
+
+}
+
+/******************************** BIO *******************************/
+.main {
+    height: 250vh;
+    width: 100vw;
+    
+    &-title {
+        @include section-title;
+        @include tablet {
+            margin-left: 5%;
+        }
+        @include mobile {
+            font-size: $font-size-h3;
+        }
+    }
+    
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        margin-bottom: 20%;
+        @include tablet {
+            height: 120vh;
+            margin-bottom: 25%;
+        }
+        @include mobile {
+            height: 135vh;
+        }
+        
+        
+        &__image {
+            height: 100%;
+            width: 57%;
+            margin-bottom: 0;
+            @include tablet {
+                width: 90%;
+            }
+        
+            &--size {
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+    
+    
+
+    &-quote {
+        display: flex;
+        flex-direction: column;
+        
+        &__words {
+            font-size: $font-size-h3;
+            height: 10vh;
+            width: 57vw;
+            margin: 0;
+            margin-bottom: 4%;
+
+            @include tablet {
+                margin-left: 5%;
+                width: 90%;
+            }
+            @include mobile {
+                height: 11vh;
+                font-size: $font-size-h4;
+            }
+            }
+
+        &__speaker {
+            font-size: $font-size-h4;
+            @include tablet {
+                margin-left: 5%;
+            }
+            @include mobile {
+                font-size: $font-size-p;
+            }
+            }
+    }
+    
+    &-bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 57%;
+        @include tablet {
+            width: 100%;
+        }
+        
+        &__title {
+            font-size: $font-size-h3;
+            width: 56%;
+            @include tablet {
+                margin-left: 5%;
+                width: 90%;
+            }
+            @include mobile {
+                font-size: $font-size-h4;
+            }
+        }
+    
+        &__writing {
+            font-size: $font-size-p;
+            margin-right: 2%;
+            @include tablet {
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+        }
+
+        &__spacing {
+            display: flex;
+            justify-content: space-between;
+            @include tablet {
+                margin-left: 0;
+                width: 97%;
+            }
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+        }
+    
+}
+
+
+/******************************** Gallery *******************************/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $text-background;
+    padding-bottom: 4%;
+    @include mobile {
+        height: 230vh;
+    }
+    
+    &-top {
+        width: 23%;
+        display: flex;
+        margin-left: 11.5%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        align-self: flex-start;
+        @include tablet {
+            margin-left: 0;
+            width: 35%;
+            padding-top: 5%;
+        }
+        @include mobile {
+            width: 80%;
+        }
+    }
+    
+    &-title {
+        @include section-title;
+        @include tablet {
+            margin-left: 8%;
+            margin-top: 0;
+        }
+        @include mobile {
+            margin-left: 5%;
+        }
+    }
+    
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 80%;
+        width: 74%;
+        @include tablet {
+            width: 100vw;
+            height: 90vh;
+        }
+        @include mobile {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 220vh;
+        }
+    }
+    
+    &-images {
+        height: 30%;
+        width: 30%;
+        @include mobile {
+            height: 10%;
+            width: 90%;
+        }
+    }
+}
+
+/******************************** FOOTER *******************************/
+.footer {
+    height: 55vh;
+    width: 100vw;
+    background-color: $nav-background;
+    font-family: $font-family;
+    color: $header-text;
+    @include tablet {
+        margin-top: 15%;
+    }
+    @include mobile {
+        height: 110vh;
+        margin-top: 140vh;
+    }
+
+    &-top {
+        display: flex;
+        margin-left: 14.5%;
+        padding-top: 3%;
+        @include tablet {
+            margin-left: 3%;
+            padding-top: 0%;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-right: 7%;
+            font-size: 1.7rem;
+            @include tablet {
+                font-size: $font-size-h2;
+                width: 30%;
+                margin-right: 3%;
+            }
+            @include mobile {
+                margin-left: 2%;
+                width: 70%;
+            }
+        }
+    
+        &__icon {
+            display: flex;
+            @include mobile {
+                margin-left: 2%;
+            }
+
+            &--position {
+                margin: 30%;
+            @include tablet {
+                margin-left: 40%;
+            }
+            @include mobile{
+                margin: 0 10% 10% 0;
+            }
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 12%;
+        width: 62vw;
+        @include tablet {
+            width: 96vw;
+            margin-left: 0;
+        }
+        @include mobile {
+            flex-direction: column;
+            margin-left: 5%;
+        }
+    }
+
+    &-agent {
+        &__name {
+            font-size: $font-size-h4;
+        }
+
+        &__location {
+            font-size: $font-size-p;
+        }
+
+        &__email {
+            font-size: $font-size-labels;
+        }
+    }
+
+    &-logo {
+        position: absolute;
+        right: 10%;
+        top: 370vh;
+        @include tablet {
+            right: 5%;
+            top: 369vh;
+        }
+        @include mobile {
+            visibility: hidden;
+        }
+    }
+
+
+    &-copywright {
+        margin-left: 14.5%;
+        padding-bottom: 1%;
+        font-size: $font-size-labels;
+        @include tablet {
+            margin-left: 3.5%;
+        }
+        @include mobile {
+            margin-left: 5%;
+        }
+    }
+}

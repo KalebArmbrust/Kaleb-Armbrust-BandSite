@@ -1,0 +1,30 @@
+@import 'fonts';
+
+/******************************** BREAKPOINTS *******************************/
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+
+/******************************** COLORS *******************************/
+$paragraph-text: #323232;
+$nav-background: #323232;
+$text-label: #AFAFAF;
+$text-border: #E1E1E1;
+$text-background: #FAFAFA;
+/******************************** FONTS *******************************/
+$font-family: 'Avenir';
+$bold-font: 'Avenir Bold';
+$demi-bold-font: 'Avenir Demi' bold;
+$header-text: #FFFFFF;
+$font-size-h1: 3.75rem;
+$font-size-h2: 2.25rem;
+$font-size-h3: 1.5rem;
+$font-size-h4: 1rem;
+$font-size-p: 0.875rem;
+$font-size-labels: 0.75rem;
+
+/******************************** MOBILE FONTS *******************************/
+$font-size-m1: 1.5rem;
+$font-size-m2: 0.875rem;
+$font-size-m3: 0.8125rem;
+$font-size-m4: 0.75rem;
