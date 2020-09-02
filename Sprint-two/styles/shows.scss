@@ -1,0 +1,322 @@
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+body {
+    margin: 0;
+    font-family: $font-family;
+}
+
+/******************************** NAV *******************************/
+.header {
+
+    &-menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        background-color: $nav-background;
+        border-bottom: 1px solid $text-label;
+        @include mobile {
+            flex-direction: column;
+            height: 14.5vh;
+            width: 100vw;
+        }
+        
+        &__logo {
+            padding-left: 15%;
+
+            @include tablet {
+                padding-left: 5%;
+                padding-right: 7%;
+            }
+            @include mobile {
+                padding-top: 7%;
+            }
+        }
+    
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 20vw;
+            list-style-type: none;
+            @include mobile {
+                box-sizing: border-box;
+                width: 100vw;
+                height: 20vh;
+            }
+
+            &-item {
+                @include tablet {
+                    padding: 20%;
+                }
+                @include mobile {
+                    font-size: $font-size-m2;
+                    width: 30%;
+                    height: 55%;
+                    padding: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                color: $header-text;
+                }
+            
+        }
+    
+    }
+    
+}
+
+.active {
+    border-bottom: 4px solid $header-text;
+    padding-bottom: 53%;
+    @include tablet {
+        padding-bottom: 63%;
+    }
+    @include mobile {
+        padding-bottom: 20%;
+    }
+}
+
+/******************************** HERO *******************************/
+.hero {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+
+    @include tablet {
+        height: 80vh;
+    }
+
+    @include mobile {
+        height: 55vh;
+    }
+
+    &-image {
+        background-image: url(../assets/Images/nasa-rTZW4f02zY8-unsplash.jpg);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    &-title {
+        margin: 0;
+        color: $header-text;
+        font-size: $font-size-h3;
+        font-family: $bold-font;
+        height: 10vh;
+        width: 45vw;
+        position: absolute;
+        bottom: 73%;
+        left: 15%;
+        @include tablet {
+            width: 70vw;
+            bottom: 67%;
+            left: 5%;
+            }
+        
+        @include mobile {
+            font-size: $font-size-h4;
+            width: 80vw;
+            height: 15vh;
+            bottom: 50%;
+            }
+        }
+    
+    &-title-big {
+        margin: 0;
+        color: $header-text;
+        font-size: $font-size-h1;
+        font-family: $bold-font;
+        height: 10vh;
+        width: 45vw;
+        position: absolute;
+        bottom: 66%;
+        left: 15%;
+        
+        @include tablet {
+            width: 75vw;
+            bottom: 60%;
+            left: 5%;
+            }
+        
+        @include mobile {
+            font-size: $font-size-m1;
+            width: 80vw;
+            height: 15vh;
+            bottom: 40%;
+            }
+        }
+    &-music {
+        position: absolute;
+        bottom: 48%;
+        left: 65%;
+        @include tablet {
+            width: 58%;
+            bottom: 17%;
+            left: 5%;
+            }
+        
+        @include mobile {
+            width: 89%;
+            height: 15vh;
+            bottom: 10%;
+            }
+    }
+}
+/******************************** Main *******************************/
+.shows {
+    height: 80vh;
+    width: 100vw;
+
+    &-top {
+        width: 37%;
+        display: flex;
+        margin-left: 9%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+        align-self: flex-start;
+        @include tablet {
+            margin-left: 0;
+            width: 35%;
+            padding-top: 5%;
+        }
+        @include mobile {
+            width: 80%;
+        }
+    }
+    
+    &-title {
+        @include section-title;
+        @include tablet {
+            margin-left: 8%;
+            margin-top: 0;
+        }
+        @include mobile {
+            margin-left: 5%;
+        }
+    }
+}
+/******************************** FOOTER *******************************/
+.footer {
+    height: 45vh;
+    width: 100vw;
+    background-color: $nav-background;
+    font-family: $font-family;
+    color: $header-text;
+    margin-top: 5vh;
+    @include tablet {
+        margin-top: 15%;
+    }
+    @include mobile {
+        height: 110vh;
+        margin-top: 140vh;
+    }
+
+    &-top {
+        display: flex;
+        margin-left: 14.5%;
+        padding-top: 3%;
+        @include tablet {
+            margin-left: 3%;
+            padding-top: 0%;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-right: 7%;
+            font-size: 1.7rem;
+            font-family: $bold-font;
+            @include tablet {
+                font-size: $font-size-h2;
+                width: 30%;
+                margin-right: 3%;
+            }
+            @include mobile {
+                margin-left: 2%;
+                width: 70%;
+            }
+        }
+    
+        &__icon {
+            display: flex;
+            @include mobile {
+                margin-left: 2%;
+            }
+
+            &--position {
+                margin: 30%;
+            @include tablet {
+                margin-left: 40%;
+            }
+            @include mobile{
+                margin: 0 10% 10% 0;
+            }
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 12%;
+        width: 62vw;
+        @include tablet {
+            width: 96vw;
+            margin-left: 0;
+        }
+        @include mobile {
+            flex-direction: column;
+            margin-left: 5%;
+        }
+    }
+
+    &-agent {
+        &__name {
+            font-size: $font-size-h4;
+            font-family: $bold-font;
+        }
+
+        &__location {
+            font-size: $font-size-p;
+        }
+
+        &__email {
+            font-size: $font-size-labels;
+        }
+    }
+
+    &-logo {
+        position: absolute;
+        right: 10%;
+        top: 199vh;
+        @include tablet {
+            right: 5%;
+            top: 188vh;
+        }
+        @include mobile {
+            visibility: hidden;
+        }
+    }
+
+
+    &-copywright {
+        margin-left: 14.5%;
+        padding-bottom: 1%;
+        font-size: $font-size-labels;
+        @include tablet {
+            margin-left: 2.5%;
+        }
+        @include mobile {
+            margin-left: 5%;
+        }
+    }
+}
