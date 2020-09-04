@@ -340,7 +340,7 @@ body {
 
 /******************************** Comments *******************************/
 .comments {
-    height: 100vh;
+    height: 130vh;
     width: 100vw;
 
     &-top {
@@ -348,7 +348,7 @@ body {
         display: flex;
         margin-left: 9%;
         padding-top: 4%;
-        padding-bottom: 2%;
+        margin-bottom: 0;
         align-self: flex-start;
         @include tablet {
             margin-left: 0;
@@ -370,6 +370,74 @@ body {
             margin-left: 5%;
         }
     }
+
+    &-add {
+        width: 100vw;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-previous {
+        margin-left: 35%;
+        width: 30%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+    }
+}
+
+.textStyle {
+    font-size: $font-size-p;
+    color: $text-border;
+    font-family: $bold-font
+}
+
+.commentImage {
+    height: 10%;
+    width: 10%;
+    border-radius: 80%;
+    position: relative;
+    right: 13%;
+    top: 16%;
+}
+
+.commentsForm {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border-bottom: 2px solid $text-border;
+}
+
+.commentBox {
+    background-color: $text-background;
+    border-radius: 3px;
+    border: solid 1px $nav-background;
+}
+
+.commentBox1 {
+    padding-bottom: 4%;
+}
+
+.commentBox2 {
+    border-color: $text-border;
+    padding-bottom: 15%;
+}
+
+
+.commentButton {
+    align-self: flex-end;
+    background-color: $nav-background;
+    width: 40%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: $text-border;
+    font-family: $demi-bold-font;
+    font-weight: 700;
 }
 
 /******************************** FOOTER *******************************/
@@ -379,7 +447,7 @@ body {
     background-color: $nav-background;
     font-family: $font-family;
     color: $header-text;
-    margin-top: 100vh;
+    margin-top: 140vh;
     @include tablet {
         margin-top: 15%;
     }
@@ -466,8 +534,7 @@ body {
     &-logo {
         position: absolute;
         right: 10%;
-        top: 470vh;
-        // top: 370vh;
+        top: 510vh;
         @include tablet {
             right: 5%;
             top: 369vh;
