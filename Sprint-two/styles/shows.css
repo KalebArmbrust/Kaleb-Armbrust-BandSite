@@ -303,6 +303,40 @@ body {
   }
 }
 
+.shows-labels {
+  width: 50vw;
+  height: 10vh;
+}
+
+.shows-grid {
+  width: 50vw;
+  height: 60vh;
+}
+
+.shows-grid1 {
+  width: 63vw;
+}
+
+.shows-grid2 {
+  width: 63vw;
+}
+
+.shows-grid3 {
+  width: 63vw;
+}
+
+.shows-grid4 {
+  width: 63vw;
+}
+
+.shows-grid5 {
+  width: 63vw;
+}
+
+.shows-grid6 {
+  width: 63vw;
+}
+
 /******************************** FOOTER *******************************/
 .footer {
   height: 45vh;
@@ -310,7 +344,7 @@ body {
   background-color: #323232;
   font-family: "Avenir";
   color: #FFFFFF;
-  margin-top: 5vh;
+  margin-top: 35vh;
 }
 
 @media screen and (max-width: 768px) {
@@ -406,7 +440,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 12%;
+  margin-left: 11.5%;
   width: 62vw;
 }
 
@@ -443,7 +477,7 @@ body {
 .footer-logo {
   position: absolute;
   right: 10%;
-  top: 199vh;
+  top: 228vh;
 }
 
 @media screen and (max-width: 768px) {

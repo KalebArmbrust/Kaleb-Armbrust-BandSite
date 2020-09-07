@@ -202,6 +202,40 @@ body {
             margin-left: 5%;
         }
     }
+    &-labels {
+        width: 50vw;
+        height: 10vh;
+    }
+
+    &-grid {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    &-grid1 {
+        width: 63vw;
+    }
+
+    &-grid2 {
+        width: 63vw;
+    }
+
+    &-grid3 {
+        width: 63vw;
+    }
+
+    &-grid4 {
+        width: 63vw;
+    }
+
+    &-grid5 {
+        width: 63vw;
+    }
+
+    &-grid6 {
+        width: 63vw;
+    }
+
 }
 /******************************** FOOTER *******************************/
 .footer {
@@ -210,7 +244,7 @@ body {
     background-color: $nav-background;
     font-family: $font-family;
     color: $header-text;
-    margin-top: 5vh;
+    margin-top: 35vh;
     @include tablet {
         margin-top: 15%;
     }
@@ -267,7 +301,7 @@ body {
     &-content {
         display: flex;
         justify-content: space-evenly;
-        margin-left: 12%;
+        margin-left: 11.5%;
         width: 62vw;
         @include tablet {
             width: 96vw;
@@ -297,7 +331,7 @@ body {
     &-logo {
         position: absolute;
         right: 10%;
-        top: 199vh;
+        top: 228vh;
         @include tablet {
             right: 5%;
             top: 188vh;

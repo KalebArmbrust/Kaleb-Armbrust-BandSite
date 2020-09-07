@@ -542,14 +542,14 @@ body {
 @media screen and (max-width: 768px) {
   .comments-top {
     margin-left: 0;
-    width: 35%;
+    width: 54%;
     padding-top: 5%;
   }
 }
 
 @media screen and (max-width: 320px) {
   .comments-top {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -563,7 +563,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .comments-title {
-    margin-left: 8%;
+    font-size: 1.5rem;
+    margin-left: 5%;
     margin-top: 0;
   }
 }
@@ -576,7 +577,7 @@ body {
 
 .comments-add {
   width: 100vw;
-  height: 40%;
+  height: 35%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -604,6 +605,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 320px) {
+  .comments-previous {
+    width: 75%;
+    margin-left: 15%;
+  }
 }
 
 .textStyle {
@@ -634,6 +642,12 @@ body {
   border-bottom: 2px solid #E1E1E1;
 }
 
+@media screen and (max-width: 320px) {
+  .commentsForm {
+    width: 70%;
+  }
+}
+
 .commentBox {
   background-color: #FAFAFA;
   border-radius: 3px;
@@ -661,6 +675,12 @@ body {
   font-weight: 700;
 }
 
+@media screen and (max-width: 768px) {
+  .commentButton {
+    width: 50%;
+  }
+}
+
 /******************************** FOOTER *******************************/
 .footer {
   height: 55vh;
@@ -673,14 +693,14 @@ body {
 
 @media screen and (max-width: 768px) {
   .footer {
-    margin-top: 15%;
+    margin-top: 160vh;
   }
 }
 
 @media screen and (max-width: 320px) {
   .footer {
     height: 110vh;
-    margin-top: 140vh;
+    margin-top: 270vh;
   }
 }
 
@@ -764,7 +784,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin-left: 12%;
+  margin-left: 11.5%;
   width: 62vw;
 }
 
@@ -807,7 +827,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer-logo {
     right: 5%;
-    top: 369vh;
+    top: 511.5vh;
   }
 }
 

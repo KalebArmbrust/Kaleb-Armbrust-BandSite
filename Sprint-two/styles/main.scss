@@ -352,18 +352,19 @@ body {
         align-self: flex-start;
         @include tablet {
             margin-left: 0;
-            width: 35%;
+            width: 54%;
             padding-top: 5%;
         }
         @include mobile {
-            width: 80%;
+            width: 100%;
         }
     }
     
     &-title {
         @include section-title;
         @include tablet {
-            margin-left: 8%;
+            font-size: $font-size-h3;
+            margin-left: 5%;
             margin-top: 0;
         }
         @include mobile {
@@ -373,7 +374,7 @@ body {
 
     &-add {
         width: 100vw;
-        height: 40%;
+        height: 35%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -387,6 +388,10 @@ body {
         flex-direction: column;
         margin-right: 0;
         align-items: center;
+        @include mobile {
+            width: 75%;
+            margin-left: 15%;
+        }
     }
 }
 
@@ -411,6 +416,9 @@ body {
     width: 30%;
     height: 100%;
     border-bottom: 2px solid $text-border;
+    @include mobile {
+        width: 70%;
+    }
 }
 
 .commentBox {
@@ -438,6 +446,9 @@ body {
     color: $text-border;
     font-family: $demi-bold-font;
     font-weight: 700;
+    @include tablet {
+        width: 50%;
+    }
 }
 
 /******************************** FOOTER *******************************/
@@ -449,11 +460,11 @@ body {
     color: $header-text;
     margin-top: 140vh;
     @include tablet {
-        margin-top: 15%;
+        margin-top: 160vh;
     }
     @include mobile {
         height: 110vh;
-        margin-top: 140vh;
+        margin-top: 270vh;
     }
 
     &-top {
@@ -504,7 +515,7 @@ body {
     &-content {
         display: flex;
         justify-content: space-evenly;
-        margin-left: 12%;
+        margin-left: 11.5%;
         width: 62vw;
         @include tablet {
             width: 96vw;
@@ -537,7 +548,7 @@ body {
         top: 510vh;
         @include tablet {
             right: 5%;
-            top: 369vh;
+            top: 511.5vh;
         }
         @include mobile {
             visibility: hidden;
