@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/main.css">
+    <title>Band Site</title>
 </head>
 <body>
     <!-----------------------------------NAV--------------------------------->
@@ -60,18 +61,19 @@
         <!----------------------------------Comments-------------------------------->
         <section class="comments">
             <div class="comments-top">
-                <h2 class="comments-title">Join the Conversation</h2>
+                <h2 class="comments-top__title">Join the Conversation</h2>
             </div>
             <div class="comments-add">
-                <form name="commentsForm" class="commentsForm">
-                    <img src="assets/Images/Mohan-muruge.jpg" alt="Male Face" class="commentImage">
-                    <label for="name" class="textStyle">NAME</label>
-                    <input type="text" name="name" class="commentBox commentBox1">
+                <form name="comments-add__form" class="comments-add__form">
+                    <img src="assets/Images/Mohan-muruge.jpg" alt="Male Face" class="comments-add__form-image">
+                    <label for="name" class="comments-add__form-text">NAME</label>
+                    <input type="text" name="name" class="comments-add__form-box comments-add__form-box1">
                     <br>
-                    <label for="comment" class="textStyle">COMMENT</label>
-                    <input type="text" name="comment" class="commentBox commentBox2">
+                    <label for="comment" class="comments-add__form-text">COMMENT</label>
+                    <input type="text" name="comment" class="comments-add__form-box comments-add__form-box2">
                     <br>
-                    <button type="submit" class="commentButton">COMMENT</button>
+                    <button type="submit" class="comments-add__form-button">COMMENT</button>
+                    <br>
                 </form>
             </div>
             <div class="comments-previous">
@@ -110,6 +112,7 @@
             <img src="assets/Logo/Logo-bandsite.svg" alt="BANDSITE LOGO">
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

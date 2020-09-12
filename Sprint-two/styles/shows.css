@@ -1,33 +1,27 @@
 @font-face {
-  font-family: 'Avenir';
+  font-family: "Avenir";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTPro.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Avenir Bold';
+  font-family: "Avenir Bold";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTProBold.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Avenir Demi';
+  font-family: "Avenir Demi";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTProDemi.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Avenir';
+  font-family: "Avenir";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTPro.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Avenir Bold';
+  font-family: "Avenir Bold";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTProBold.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'Avenir Demi';
+  font-family: "Avenir Demi";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTProDemi.ttf") format("truetype");
 }
-
 /******************************** BREAKPOINTS *******************************/
 /******************************** COLORS *******************************/
 /******************************** FONTS *******************************/
@@ -53,7 +47,6 @@ body {
   background-color: #323232;
   border-bottom: 1px solid #AFAFAF;
 }
-
 @media screen and (max-width: 320px) {
   .header-menu {
     -webkit-box-orient: vertical;
@@ -64,24 +57,20 @@ body {
     width: 100vw;
   }
 }
-
 .header-menu__logo {
   padding-left: 15%;
 }
-
 @media screen and (max-width: 768px) {
   .header-menu__logo {
     padding-left: 5%;
     padding-right: 7%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .header-menu__logo {
     padding-top: 7%;
   }
 }
-
 .header-menu__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +84,6 @@ body {
   width: 20vw;
   list-style-type: none;
 }
-
 @media screen and (max-width: 320px) {
   .header-menu__nav {
     -webkit-box-sizing: border-box;
@@ -104,13 +92,11 @@ body {
     height: 20vh;
   }
 }
-
 @media screen and (max-width: 768px) {
   .header-menu__nav-item {
     padding: 20%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .header-menu__nav-item {
     font-size: 0.875rem;
@@ -119,7 +105,6 @@ body {
     padding: 0;
   }
 }
-
 .header-menu__nav-link {
   text-decoration: none;
   color: #FFFFFF;
@@ -129,13 +114,11 @@ body {
   border-bottom: 4px solid #FFFFFF;
   padding-bottom: 53%;
 }
-
 @media screen and (max-width: 768px) {
   .active {
     padding-bottom: 63%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .active {
     padding-bottom: 20%;
@@ -148,19 +131,16 @@ body {
   width: 100vw;
   position: relative;
 }
-
 @media screen and (max-width: 768px) {
   .hero {
     height: 80vh;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero {
     height: 55vh;
   }
 }
-
 .hero-image {
   background-image: url(../assets/Images/nasa-rTZW4f02zY8-unsplash.jpg);
   height: 100%;
@@ -169,7 +149,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .hero-title {
   margin: 0;
   color: #FFFFFF;
@@ -181,7 +160,6 @@ body {
   bottom: 73%;
   left: 15%;
 }
-
 @media screen and (max-width: 768px) {
   .hero-title {
     width: 70vw;
@@ -189,7 +167,6 @@ body {
     left: 5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero-title {
     font-size: 1rem;
@@ -198,7 +175,6 @@ body {
     bottom: 50%;
   }
 }
-
 .hero-title-big {
   margin: 0;
   color: #FFFFFF;
@@ -210,7 +186,6 @@ body {
   bottom: 66%;
   left: 15%;
 }
-
 @media screen and (max-width: 768px) {
   .hero-title-big {
     width: 75vw;
@@ -218,7 +193,6 @@ body {
     left: 5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero-title-big {
     font-size: 1.5rem;
@@ -227,13 +201,11 @@ body {
     bottom: 40%;
   }
 }
-
 .hero-music {
   position: absolute;
   bottom: 48%;
   left: 65%;
 }
-
 @media screen and (max-width: 768px) {
   .hero-music {
     width: 58%;
@@ -241,7 +213,6 @@ body {
     left: 5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .hero-music {
     width: 89%;
@@ -255,7 +226,6 @@ body {
   height: 80vh;
   width: 100vw;
 }
-
 .shows-top {
   width: 37%;
   display: -webkit-box;
@@ -267,7 +237,6 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
-
 @media screen and (max-width: 768px) {
   .shows-top {
     margin-left: 0;
@@ -275,13 +244,11 @@ body {
     padding-top: 5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .shows-top {
     width: 80%;
   }
 }
-
 .shows-title {
   font-size: 2.25rem;
   font-family: "Avenir Bold";
@@ -289,52 +256,81 @@ body {
   color: #323232;
   margin: 4% 0 4% 15%;
 }
-
 @media screen and (max-width: 768px) {
   .shows-title {
     margin-left: 8%;
     margin-top: 0;
   }
 }
-
 @media screen and (max-width: 320px) {
   .shows-title {
     margin-left: 5%;
   }
 }
-
 .shows-labels {
-  width: 50vw;
+  width: 70vw;
   height: 10vh;
+  margin-left: 15.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #AFAFAF;
 }
-
+@media screen and (max-width: 768px) {
+  .shows-labels {
+    margin-left: 0;
+  }
+}
 .shows-grid {
-  width: 50vw;
+  width: 70vw;
   height: 60vh;
+  margin-left: 25%;
 }
-
-.shows-grid1 {
-  width: 63vw;
+@media screen and (max-width: 768px) {
+  .shows-grid {
+    width: 100%;
+    margin-left: 5%;
+  }
 }
-
-.shows-grid2 {
-  width: 63vw;
+.shows-grid__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #E1E1E1;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 3%;
 }
-
-.shows-grid3 {
-  width: 63vw;
+.shows-grid__container-date {
+  color: #323232;
+  font-family: "Avenir Bold";
+  margin: 0;
+  padding: 0;
 }
-
-.shows-grid4 {
-  width: 63vw;
+.shows-grid__container-venue {
+  color: #323232;
+  margin: 0;
+  padding: 0;
 }
-
-.shows-grid5 {
-  width: 63vw;
+.shows-grid__container-location {
+  color: #323232;
+  margin: 0;
+  padding: 0;
 }
-
-.shows-grid6 {
-  width: 63vw;
+.shows-grid__container-button {
+  color: #E1E1E1;
+  background-color: #323232;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 3px;
+  margin-bottom: 3%;
 }
 
 /******************************** FOOTER *******************************/
@@ -344,22 +340,19 @@ body {
   background-color: #323232;
   font-family: "Avenir";
   color: #FFFFFF;
-  margin-top: 35vh;
+  margin-top: 25vh;
 }
-
 @media screen and (max-width: 768px) {
   .footer {
     margin-top: 15%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer {
     height: 110vh;
     margin-top: 140vh;
   }
 }
-
 .footer-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,14 +360,12 @@ body {
   margin-left: 14.5%;
   padding-top: 3%;
 }
-
 @media screen and (max-width: 768px) {
   .footer-top {
     margin-left: 3%;
     padding-top: 0%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-top {
     -webkit-box-orient: vertical;
@@ -383,13 +374,11 @@ body {
             flex-direction: column;
   }
 }
-
 .footer-top__title {
   margin-right: 7%;
   font-size: 1.7rem;
   font-family: "Avenir Bold";
 }
-
 @media screen and (max-width: 768px) {
   .footer-top__title {
     font-size: 2.25rem;
@@ -397,42 +386,35 @@ body {
     margin-right: 3%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-top__title {
     margin-left: 2%;
     width: 70%;
   }
 }
-
 .footer-top__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 @media screen and (max-width: 320px) {
   .footer-top__icon {
     margin-left: 2%;
   }
 }
-
 .footer-top__icon--position {
   margin: 30%;
 }
-
 @media screen and (max-width: 768px) {
   .footer-top__icon--position {
     margin-left: 40%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-top__icon--position {
     margin: 0 10% 10% 0;
   }
 }
-
 .footer-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,14 +425,12 @@ body {
   margin-left: 11.5%;
   width: 62vw;
 }
-
 @media screen and (max-width: 768px) {
   .footer-content {
     width: 96vw;
     margin-left: 0;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-content {
     -webkit-box-orient: vertical;
@@ -460,53 +440,48 @@ body {
     margin-left: 5%;
   }
 }
-
 .footer-agent__name {
   font-size: 1rem;
   font-family: "Avenir Bold";
 }
-
 .footer-agent__location {
   font-size: 0.875rem;
 }
-
 .footer-agent__email {
   font-size: 0.75rem;
 }
-
 .footer-logo {
   position: absolute;
   right: 10%;
-  top: 228vh;
+  top: 219vh;
 }
-
 @media screen and (max-width: 768px) {
   .footer-logo {
     right: 5%;
     top: 188vh;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-logo {
     visibility: hidden;
   }
 }
-
 .footer-copywright {
   margin-left: 14.5%;
   padding-bottom: 1%;
   font-size: 0.75rem;
 }
-
 @media screen and (max-width: 768px) {
   .footer-copywright {
     margin-left: 2.5%;
   }
 }
-
 @media screen and (max-width: 320px) {
   .footer-copywright {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=shows.css.map */ht {
     margin-left: 5%;
   }
 }
