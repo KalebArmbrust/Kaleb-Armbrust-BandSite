@@ -1,0 +1,662 @@
+@import 'partials/fonts';
+@import 'partials/variables';
+@import 'partials/mixins';
+
+
+/******************************** NAV *******************************/
+body {
+    font-family: $font-family;
+    margin: 0;
+}
+
+.header {
+
+    &-menu {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100vw;
+        height: 10vh;
+        background-color: $nav-background;
+        border-bottom: 1px solid $text-label;
+        @include mobile {
+            flex-direction: column;
+            height: 14.5vh;
+            width: 100vw;
+        }
+        
+        &__logo {
+            padding-left: 15%;
+
+            @include tablet {
+                padding-left: 5%;
+                padding-right: 7%;
+            }
+            @include mobile {
+                padding-top: 7%;
+            }
+        }
+    
+        &__nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 20vw;
+            list-style-type: none;
+            @include mobile {
+                box-sizing: border-box;
+                width: 100vw;
+                height: 20vh;
+            }
+
+            &-item {
+                @include tablet {
+                    padding: 20%;
+                }
+                @include mobile {
+                    font-size: $font-size-m2;
+                    width: 30%;
+                    height: 55%;
+                    padding: 0;
+                }
+            }
+
+            &-link {
+                text-decoration: none;
+                color: $header-text;
+                }
+            
+        }
+    
+    }
+    
+}
+
+.active {
+    border-bottom: 4px solid $header-text;
+    padding-bottom: 32%;
+    @include tablet {
+        padding-bottom: 25%;
+    }
+    @include mobile {
+        padding-bottom: 17%;
+    }
+}
+
+/******************************** HERO *******************************/
+.hero {
+    height: 95vh;
+    width: 100vw;
+    position: relative;
+
+    @include tablet {
+        height: 80vh;
+    }
+
+    @include mobile {
+        height: 50vh;
+    }
+
+    &__image {
+        background-image: url(../assets/Images/oscar-keys-ojVMh1QTVGY-unsplash.jpg);
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    &__title {
+        margin: 0;
+        color: $header-text;
+        font-size: $font-size-h1;
+        font-family: $bold-font;
+        height: 10vh;
+        width: 45vw;
+        position: absolute;
+        bottom: 66%;
+        left: 15%;
+
+        @include tablet {
+            width: 70vw;
+            bottom: 60%;
+            left: 5%;
+        }
+
+        @include mobile {
+            font-size: $font-size-m1;
+            width: 80vw;
+            height: 15vh;
+            bottom: 40%;
+        }
+    }
+    
+
+}
+
+/******************************** BIO *******************************/
+.main {
+    width: 100vw;
+    
+    &-title {
+        @include section-title;
+        @include tablet {
+            margin-left: 5%;
+        }
+        @include mobile {
+            font-size: $font-size-m1;
+        }
+    }
+    
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 2%;
+        
+        &__image {
+            height: 100%;
+            width: 57%;
+            margin-bottom: 0;
+            @include tablet {
+                width: 90%;
+            }
+        
+            &--size {
+                height: 90%;
+                width: 100%;
+            }
+        }
+    }
+    
+    
+
+    &-quote {
+        display: flex;
+        flex-direction: column;
+        
+        &__words {
+            font-size: $font-size-h3;
+            font-family: $bold-font;
+            color: $paragraph-text;
+            height: 10vh;
+            width: 57vw;
+            margin: 5% unset 2% unset;
+
+            @include tablet {
+                margin-left: 5%;
+                width: 90%;
+            }
+            @include mobile {
+                height: 11vh;
+                font-size: $font-size-h4;
+            }
+            }
+
+        &__speaker {
+            font-size: $font-size-h4;
+            font-family: $demi-bold-font;
+            color: $paragraph-text;
+            @include tablet {
+                margin-left: 5%;
+            }
+            @include mobile {
+                font-size: $font-size-p;
+                font-family: $bold-font;
+                color: $paragraph-text;
+            }
+            }
+    }
+    
+    &-bio {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 57%;
+        @include tablet {
+            width: 100%;
+        }
+        
+        &__title {
+            font-size: $font-size-h3;
+            font-family: $bold-font;
+            color: $paragraph-text;
+            width: 56%;
+            @include tablet {
+                margin-left: 5%;
+                width: 90%;
+            }
+            @include mobile {
+                font-size: $font-size-h4;
+            }
+        }
+    
+        &__writing {
+            font-size: $font-size-p;
+            color: $paragraph-text;
+            margin-right: 2%;
+            @include tablet {
+                margin-left: 5%;
+                margin-right: 3%;
+            }
+        }
+
+        &__spacing {
+            display: flex;
+            justify-content: space-between;
+            @include tablet {
+                margin-left: 0;
+                width: 97%;
+            }
+            @include mobile {
+                flex-direction: column;
+            }
+        }
+        }
+    
+}
+
+
+/******************************** Gallery *******************************/
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: $text-background;
+    
+    &-top {
+        width: 23%;
+        display: flex;
+        margin-left: 11.5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        align-self: flex-start;
+        @include tablet {
+            margin-left: 0;
+            width: 35%;
+            padding-top: 3%;
+        }
+        @include mobile {
+            width: 80%;
+        }
+    }
+    
+    &-title {
+        @include section-title;
+        @include tablet {
+            margin-left: 8%;
+            margin-top: 0;
+        }
+        @include mobile {
+            font-size: $font-size-h3;
+            margin: 2% 0 2% 6%;
+        }
+    }
+    
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 80%;
+        width: 74%;
+        padding-bottom: 2%;
+        @include tablet {
+            width: 100vw;
+            height: 70vh;
+            padding-bottom: 3%;
+        }
+        @include mobile {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 220vh;
+        }
+    }
+    
+    &-images {
+        height: 30%;
+        width: 30%;
+        padding-bottom: 2%;
+        @include mobile {
+            height: 10%;
+            width: 90%;
+        }
+    }
+}
+
+/******************************** Comments *******************************/
+.comments {
+    width: 100vw;
+
+    &-top {
+        width: 37%;
+        display: flex;
+        margin-left: 9%;
+        margin-bottom: 0;
+        align-self: flex-start;
+        @include tablet {
+            margin-left: 0;
+            width: 54%;
+            padding-top: 4%;
+        }
+        @include mobile {
+            width: 100%;
+        }
+
+        &__title {
+            @include section-title;
+            @include tablet {
+                font-size: $font-size-h2;
+                margin-left: 5%;
+                margin-top: 0;
+            }
+            @include mobile {
+                font-size: $font-size-h3;
+                margin-bottom: 0;
+                margin-left: 6%;
+            }
+        }
+    }
+
+    &-add {
+        width: 100vw;
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include mobile {
+            height: 38%;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            height: 85%;
+            border-bottom: 2px solid $text-border;
+            @include tablet {
+                margin-left: 15%;
+                height: 100%;
+                width: 55%;
+            }
+            @include mobile {
+                width: 70%;
+            }
+            
+            &-image {
+                height: 10%;
+                width: 10%;
+                border-radius: 80%;
+                position: relative;
+                right: 13%;
+                top: 6vh;
+                @include tablet {
+                    top: 8vh;
+                    height: 15%;
+                }
+                @include mobile {
+                    top: 7vh;
+                    right: 20%;
+                    height: 15%;
+                    width: 15%;
+                }
+            }
+
+            &-text {
+                font-size: $font-size-p;
+                color: $text-border;
+                font-family: $bold-font
+            }
+
+            &-box {
+                background-color: $text-background;
+                border-radius: 3px;
+                border: solid 1px $nav-background;
+            }
+            
+            &-box1 {
+                padding-bottom: 4%;
+                @include tablet {
+                    padding-bottom: 6%;
+                }
+                @include mobile {
+                    padding-bottom: 10%;
+                }
+            }
+            
+            &-box2 {
+                border-color: $text-border;
+                padding-bottom: 15%;
+                @include mobile {
+                    padding-bottom: 30%;
+                }
+            }
+            
+            
+            &-button {
+                align-self: flex-end;
+                background-color: $nav-background;
+                width: 40%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                color: $text-border;
+                font-family: $demi-bold-font;
+                font-weight: 700;
+                border-radius: 5px;
+                @include tablet {
+                    width: 40%;
+                }
+                @include mobile {
+                    width: 100%;
+                    padding-top: 6%;
+                    padding-bottom: 6%;
+                }
+            }
+        }
+    }
+
+    &-previous {
+        margin-left: 35%;
+        width: 30%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        align-items: center;
+        @include tablet {
+            width: 50%;
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+
+        @include mobile {
+            width: 75%;
+            margin-left: 15%;
+        }
+
+        &__container {
+            display: flex;
+            align-items: baseline;
+            width: 26vw;
+            margin-right: 39%;
+            margin-bottom: 2%;
+            @include tablet {
+                width: 45vw;
+                margin-right: 40%;
+            }
+            @include mobile {
+                margin-left: 48%;
+                width: 100vw;
+            }
+            
+            &-image {
+                height: 3.5vh;
+                width: 2.5vw;
+                background-color: $text-border;
+                border-radius: 80%;
+                margin-right: 5%;
+                position: relative;
+                top: 2vh;
+                @include tablet {
+                    width: 5vw;
+                    height: 5vh;
+                    top: 4vh;
+                }
+                @include mobile {
+                    height: 6vh;
+                    width: 10vw;
+                }
+            }
+
+            &-name {
+                margin: 0;
+                margin-right: 3%;
+                @include mobile {
+                    font-size: $font-size-h4;
+                }
+            }
+
+            &-timestamp {
+                margin: 0;
+                color: $text-label;
+                @include mobile {
+                    font-size: $font-size-h4;
+                }
+            }
+
+        }
+        &__textContainer {
+            border-bottom: 2px solid $text-border;
+            margin-bottom: 5%;
+            @include mobile {
+                margin-left: 7%;
+            }
+            &-text {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 5%;
+            @include mobile {
+                font-size: $font-size-p;
+            }
+            }
+
+        }
+    }
+}
+
+
+/******************************** FOOTER *******************************/
+.footer {
+    height: 45vh;
+    width: 100vw;
+    background-color: $nav-background;
+    font-family: $font-family;
+    color: $header-text;
+    @include mobile {
+        height: 110vh;
+    }
+
+    &-top {
+        display: flex;
+        margin-left: 14.5%;
+        padding-top: 2%;
+        @include tablet {
+            margin-left: 3%;
+            padding-top: 0%;
+        }
+        @include mobile {
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-right: 8%;
+            font-size: 1.7rem;
+            font-family: $bold-font;
+            @include tablet {
+                font-size: $font-size-h2;
+                width: 30%;
+                margin-right: 3%;
+            }
+            @include mobile {
+                margin-left: 2%;
+                width: 70%;
+            }
+        }
+    
+        &__icon {
+            display: flex;
+            @include mobile {
+                margin-left: 2%;
+            }
+
+            &--position {
+                margin: 30%;
+            @include tablet {
+                margin-left: 40%;
+            }
+            @include mobile{
+                margin: 0 10% 10% 0;
+            }
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 11.5%;
+        width: 62vw;
+        @include tablet {
+            width: 96vw;
+            margin-left: .5%;
+        }
+        @include mobile {
+            flex-direction: column;
+            margin-left: 5%;
+        }
+    }
+
+    &-agent {
+        &__name {
+            font-size: $font-size-h4;
+            font-family: $bold-font;
+        }
+
+        &__location {
+            font-size: $font-size-p;
+        }
+
+        &__email {
+            font-size: $font-size-labels;
+        }
+    }
+
+    &-logo {
+        position: relative;
+        left: 80%;
+        bottom: 74%;
+        @include tablet {
+            right: 5%;
+            bottom: 87.5%;
+        }
+        @include mobile {
+            visibility: hidden;
+        }
+    }
+
+
+    &-copywright {
+        margin-left: 14.5%;
+        padding-bottom: 1%;
+        font-size: $font-size-labels;
+        @include tablet {
+            margin-left: 3.3%;
+        }
+        @include mobile {
+            margin-left: 5%;
+        }
+    }
+}

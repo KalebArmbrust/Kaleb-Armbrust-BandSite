@@ -1,0 +1,602 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/Fonts/Linotype-AvenirNextLTPro.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Avenir Bold';
+  src: url("../../assets/Fonts/Linotype-AvenirNextLTProBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Avenir Demi';
+  src: url("../../assets/Fonts/Linotype-AvenirNextLTProDemi.ttf") format("truetype");
+}
+
+/******************************** BREAKPOINTS *******************************/
+/******************************** COLORS *******************************/
+/******************************** FONTS *******************************/
+/******************************** MOBILE FONTS *******************************/
+body {
+  margin: 0;
+  font-family: "Avenir";
+}
+
+/******************************** NAV *******************************/
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #323232;
+  border-bottom: 1px solid #AFAFAF;
+}
+
+@media screen and (max-width: 320px) {
+  .header-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 14.5vh;
+    width: 100vw;
+  }
+}
+
+.header-menu__logo {
+  padding-left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu__logo {
+    padding-left: 5%;
+    padding-right: 7%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-menu__logo {
+    padding-top: 7%;
+  }
+}
+
+.header-menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 20vw;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 320px) {
+  .header-menu__nav {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100vw;
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu__nav-item {
+    padding: 20%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header-menu__nav-item {
+    font-size: 0.875rem;
+    width: 30%;
+    height: 55%;
+    padding: 0;
+  }
+}
+
+.header-menu__nav-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.active {
+  border-bottom: 4px solid #FFFFFF;
+  padding-bottom: 53%;
+}
+
+@media screen and (max-width: 768px) {
+  .active {
+    padding-bottom: 45%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .active {
+    padding-bottom: 20%;
+  }
+}
+
+/******************************** HERO *******************************/
+.hero {
+  height: 95vh;
+  width: 100vw;
+  position: relative;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 55vh;
+  }
+}
+
+.hero-image {
+  background-image: url(../assets/Images/nasa-rTZW4f02zY8-unsplash.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  font-family: "Avenir Bold";
+  height: 10vh;
+  width: 45vw;
+  position: absolute;
+  bottom: 73%;
+  left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    width: 70vw;
+    bottom: 67%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-title {
+    font-size: 1rem;
+    width: 80vw;
+    height: 15vh;
+    bottom: 50%;
+  }
+}
+
+.hero-title-big {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 3.75rem;
+  font-family: "Avenir Bold";
+  height: 10vh;
+  width: 45vw;
+  position: absolute;
+  bottom: 66%;
+  left: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title-big {
+    width: 75vw;
+    bottom: 60%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-title-big {
+    font-size: 1.5rem;
+    width: 80vw;
+    height: 15vh;
+    bottom: 40%;
+  }
+}
+
+.hero-music {
+  position: absolute;
+  bottom: 48%;
+  left: 65%;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-music {
+    width: 58%;
+    bottom: 5%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero-music {
+    width: 89%;
+    height: 15vh;
+    bottom: 10%;
+  }
+}
+
+/******************************** Main *******************************/
+.shows {
+  height: 80vh;
+  width: 100vw;
+}
+
+@media screen and (max-width: 768px) {
+  .shows {
+    width: 90%;
+  }
+}
+
+.shows-top {
+  width: 37%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 9%;
+  padding-top: 4%;
+  padding-bottom: 2%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-top {
+    margin-left: 0;
+    width: 35%;
+    padding-top: 5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .shows-top {
+    width: 80%;
+  }
+}
+
+.shows-title {
+  font-size: 2.25rem;
+  font-family: "Avenir Bold";
+  font-weight: 900;
+  color: #323232;
+  margin: 4% 0 4% 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-title {
+    margin-left: 13%;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .shows-title {
+    margin-left: 5%;
+    margin-bottom: 15%;
+  }
+}
+
+.shows-labels {
+  width: 65vw;
+  height: 10vh;
+  margin-left: 16.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #AFAFAF;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-labels {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 60vw;
+    margin-left: 5%;
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .shows-labels {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
+.shows-grid {
+  width: 70vw;
+  height: 60vh;
+  margin-left: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-grid {
+    width: 100%;
+    margin-left: 5%;
+  }
+}
+
+.shows-grid__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid #E1E1E1;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 320px) {
+  .shows-grid__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 40%;
+    margin-bottom: 10%;
+  }
+}
+
+.shows-grid__container-date {
+  color: #323232;
+  font-family: "Avenir Bold";
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-grid__container-date {
+    font-size: 0.875rem;
+  }
+}
+
+.shows-grid__container-venue {
+  color: #323232;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-grid__container-venue {
+    font-size: 0.8125rem;
+  }
+}
+
+.shows-grid__container-location {
+  color: #323232;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-grid__container-location {
+    font-size: 0.8125rem;
+  }
+}
+
+.shows-grid__container-button {
+  color: #FFFFFF;
+  font-family: "Avenir Demi";
+  font-weight: 200;
+  background-color: #323232;
+  height: 5vh;
+  width: 10vw;
+  border-radius: 3px;
+  margin-bottom: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .shows-grid__container-button {
+    width: 17vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .shows-grid__container-button {
+    width: 100%;
+    height: 30%;
+    margin-bottom: 5%;
+  }
+}
+
+/******************************** FOOTER *******************************/
+.footer {
+  height: 45vh;
+  width: 100vw;
+  background-color: #323232;
+  font-family: "Avenir";
+  color: #FFFFFF;
+  margin-top: 25vh;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    height: 110vh;
+    margin-top: 110vh;
+  }
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 14.5%;
+  padding-top: 3%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top {
+    margin-left: 3%;
+    padding-top: 0%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer-top__title {
+  margin-right: 8.2%;
+  font-size: 1.7rem;
+  font-family: "Avenir Bold";
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top__title {
+    font-size: 2.25rem;
+    width: 30%;
+    margin-right: 3%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-top__title {
+    margin-left: 2%;
+    width: 70%;
+  }
+}
+
+.footer-top__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 320px) {
+  .footer-top__icon {
+    margin-left: 2%;
+  }
+}
+
+.footer-top__icon--position {
+  margin: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-top__icon--position {
+    margin-left: 40%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-top__icon--position {
+    margin: 0 10% 10% 0;
+  }
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 11.5%;
+  width: 62vw;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    width: 96vw;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 5%;
+  }
+}
+
+.footer-agent__name {
+  font-size: 1rem;
+  font-family: "Avenir Bold";
+}
+
+.footer-agent__location {
+  font-size: 0.875rem;
+}
+
+.footer-agent__email {
+  font-size: 0.75rem;
+}
+
+.footer-logo {
+  position: absolute;
+  right: 10%;
+  top: 219vh;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-logo {
+    right: 5%;
+    top: 193vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-logo {
+    visibility: hidden;
+  }
+}
+
+.footer-copywright {
+  margin-left: 14.5%;
+  padding-bottom: 1%;
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-copywright {
+    margin-left: 2.5%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-copywright {
+    margin-left: 5%;
+  }
+}
+/*# sourceMappingURL=shows.css.map */
