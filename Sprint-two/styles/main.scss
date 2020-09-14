@@ -76,10 +76,10 @@ body {
     border-bottom: 4px solid $header-text;
     padding-bottom: 32%;
     @include tablet {
-        padding-bottom: 24%;
+        padding-bottom: 25%;
     }
     @include mobile {
-        padding-bottom: 10%;
+        padding-bottom: 17%;
     }
 }
 
@@ -136,7 +136,6 @@ body {
 
 /******************************** BIO *******************************/
 .main {
-    height: 250vh;
     width: 100vw;
     
     &-title {
@@ -153,17 +152,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
         width: 100vw;
-        margin-bottom: 20%;
-        @include tablet {
-            height: 120vh;
-            margin-bottom: 25%;
-        }
-        @include mobile {
-            height: 135vh;
-        }
-        
+        margin-bottom: 2%;
         
         &__image {
             height: 100%;
@@ -192,8 +182,7 @@ body {
             color: $paragraph-text;
             height: 10vh;
             width: 57vw;
-            margin: 0;
-            margin-bottom: 4%;
+            margin: 5% unset 2% unset;
 
             @include tablet {
                 margin-left: 5%;
@@ -274,24 +263,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     width: 100vw;
     background-color: $text-background;
-    @include mobile {
-        height: 230vh;
-    }
     
     &-top {
         width: 23%;
         display: flex;
         margin-left: 11.5%;
-        padding-top: 4%;
+        padding-top: 2%;
         padding-bottom: 2%;
         align-self: flex-start;
         @include tablet {
             margin-left: 0;
             width: 35%;
-            padding-top: 5%;
+            padding-top: 3%;
         }
         @include mobile {
             width: 80%;
@@ -305,7 +290,8 @@ body {
             margin-top: 0;
         }
         @include mobile {
-            margin-left: 5%;
+            font-size: $font-size-h3;
+            margin: 2% 0 2% 6%;
         }
     }
     
@@ -315,9 +301,11 @@ body {
         justify-content: space-evenly;
         height: 80%;
         width: 74%;
+        padding-bottom: 2%;
         @include tablet {
             width: 100vw;
-            height: 90vh;
+            height: 70vh;
+            padding-bottom: 3%;
         }
         @include mobile {
             flex-wrap: nowrap;
@@ -331,6 +319,7 @@ body {
     &-images {
         height: 30%;
         width: 30%;
+        padding-bottom: 2%;
         @include mobile {
             height: 10%;
             width: 90%;
@@ -340,20 +329,18 @@ body {
 
 /******************************** Comments *******************************/
 .comments {
-    height: 130vh;
     width: 100vw;
 
     &-top {
         width: 37%;
         display: flex;
         margin-left: 9%;
-        padding-top: 4%;
         margin-bottom: 0;
         align-self: flex-start;
         @include tablet {
             margin-left: 0;
             width: 54%;
-            padding-top: 5%;
+            padding-top: 4%;
         }
         @include mobile {
             width: 100%;
@@ -362,12 +349,14 @@ body {
         &__title {
             @include section-title;
             @include tablet {
-                font-size: $font-size-h3;
+                font-size: $font-size-h2;
                 margin-left: 5%;
                 margin-top: 0;
             }
             @include mobile {
-                margin-left: 5%;
+                font-size: $font-size-h3;
+                margin-bottom: 0;
+                margin-left: 6%;
             }
         }
     }
@@ -378,6 +367,9 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        @include mobile {
+            height: 38%;
+        }
 
         &__form {
             display: flex;
@@ -385,16 +377,32 @@ body {
             width: 30%;
             height: 85%;
             border-bottom: 2px solid $text-border;
+            @include tablet {
+                margin-left: 15%;
+                height: 100%;
+                width: 55%;
+            }
             @include mobile {
                 width: 70%;
             }
+            
             &-image {
                 height: 10%;
                 width: 10%;
                 border-radius: 80%;
                 position: relative;
                 right: 13%;
-                top: 16%;
+                top: 6vh;
+                @include tablet {
+                    top: 8vh;
+                    height: 15%;
+                }
+                @include mobile {
+                    top: 7vh;
+                    right: 20%;
+                    height: 15%;
+                    width: 15%;
+                }
             }
 
             &-text {
@@ -411,11 +419,20 @@ body {
             
             &-box1 {
                 padding-bottom: 4%;
+                @include tablet {
+                    padding-bottom: 6%;
+                }
+                @include mobile {
+                    padding-bottom: 10%;
+                }
             }
             
             &-box2 {
                 border-color: $text-border;
                 padding-bottom: 15%;
+                @include mobile {
+                    padding-bottom: 30%;
+                }
             }
             
             
@@ -428,8 +445,14 @@ body {
                 color: $text-border;
                 font-family: $demi-bold-font;
                 font-weight: 700;
+                border-radius: 5px;
                 @include tablet {
-                    width: 50%;
+                    width: 40%;
+                }
+                @include mobile {
+                    width: 100%;
+                    padding-top: 6%;
+                    padding-bottom: 6%;
                 }
             }
         }
@@ -443,6 +466,12 @@ body {
         flex-direction: column;
         margin-right: 0;
         align-items: center;
+        @include tablet {
+            width: 50%;
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+
         @include mobile {
             width: 75%;
             margin-left: 15%;
@@ -450,27 +479,70 @@ body {
 
         &__container {
             display: flex;
-            flex-direction: column;
-            height: 40%;
+            align-items: baseline;
+            width: 26vw;
+            margin-right: 39%;
+            margin-bottom: 2%;
+            @include tablet {
+                width: 45vw;
+                margin-right: 40%;
+            }
+            @include mobile {
+                margin-left: 48%;
+                width: 100vw;
+            }
             
             &-image {
                 height: 3.5vh;
                 width: 2.5vw;
                 background-color: $text-border;
                 border-radius: 80%;
+                margin-right: 5%;
+                position: relative;
+                top: 2vh;
+                @include tablet {
+                    width: 5vw;
+                    height: 5vh;
+                    top: 4vh;
+                }
+                @include mobile {
+                    height: 6vh;
+                    width: 10vw;
+                }
             }
 
             &-name {
                 margin: 0;
+                margin-right: 3%;
+                @include mobile {
+                    font-size: $font-size-h4;
+                }
             }
 
             &-timestamp {
                 margin: 0;
+                color: $text-label;
+                @include mobile {
+                    font-size: $font-size-h4;
+                }
             }
 
-            &-text {
-                margin: 0;
+        }
+        &__textContainer {
+            border-bottom: 2px solid $text-border;
+            margin-bottom: 5%;
+            @include mobile {
+                margin-left: 7%;
             }
+            &-text {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 5%;
+            @include mobile {
+                font-size: $font-size-p;
+            }
+            }
+
         }
     }
 }
@@ -478,24 +550,19 @@ body {
 
 /******************************** FOOTER *******************************/
 .footer {
-    height: 55vh;
+    height: 45vh;
     width: 100vw;
     background-color: $nav-background;
     font-family: $font-family;
     color: $header-text;
-    margin-top: 140vh;
-    @include tablet {
-        margin-top: 160vh;
-    }
     @include mobile {
         height: 110vh;
-        margin-top: 270vh;
     }
 
     &-top {
         display: flex;
         margin-left: 14.5%;
-        padding-top: 3%;
+        padding-top: 2%;
         @include tablet {
             margin-left: 3%;
             padding-top: 0%;
@@ -505,7 +572,7 @@ body {
         }
 
         &__title {
-            margin-right: 7%;
+            margin-right: 8%;
             font-size: 1.7rem;
             font-family: $bold-font;
             @include tablet {
@@ -544,7 +611,7 @@ body {
         width: 62vw;
         @include tablet {
             width: 96vw;
-            margin-left: 0;
+            margin-left: .5%;
         }
         @include mobile {
             flex-direction: column;
@@ -568,12 +635,12 @@ body {
     }
 
     &-logo {
-        position: absolute;
-        right: 10%;
-        top: 510vh;
+        position: relative;
+        left: 80%;
+        bottom: 74%;
         @include tablet {
             right: 5%;
-            top: 511.5vh;
+            bottom: 87.5%;
         }
         @include mobile {
             visibility: hidden;
@@ -586,7 +653,7 @@ body {
         padding-bottom: 1%;
         font-size: $font-size-labels;
         @include tablet {
-            margin-left: 3%;
+            margin-left: 3.3%;
         }
         @include mobile {
             margin-left: 5%;

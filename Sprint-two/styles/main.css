@@ -10,18 +10,6 @@
   font-family: "Avenir Demi";
   src: url("../../assets/Fonts/Linotype-AvenirNextLTProDemi.ttf") format("truetype");
 }
-@font-face {
-  font-family: "Avenir";
-  src: url("../../assets/Fonts/Linotype-AvenirNextLTPro.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Avenir Bold";
-  src: url("../../assets/Fonts/Linotype-AvenirNextLTProBold.ttf") format("truetype");
-}
-@font-face {
-  font-family: "Avenir Demi";
-  src: url("../../assets/Fonts/Linotype-AvenirNextLTProDemi.ttf") format("truetype");
-}
 /******************************** BREAKPOINTS *******************************/
 /******************************** COLORS *******************************/
 /******************************** FONTS *******************************/
@@ -116,12 +104,12 @@ body {
 }
 @media screen and (max-width: 768px) {
   .active {
-    padding-bottom: 24%;
+    padding-bottom: 25%;
   }
 }
 @media screen and (max-width: 320px) {
   .active {
-    padding-bottom: 10%;
+    padding-bottom: 17%;
   }
 }
 
@@ -178,7 +166,6 @@ body {
 
 /******************************** BIO *******************************/
 .main {
-  height: 250vh;
   width: 100vw;
 }
 .main-title {
@@ -209,20 +196,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   width: 100vw;
-  margin-bottom: 20%;
-}
-@media screen and (max-width: 768px) {
-  .main-content {
-    height: 120vh;
-    margin-bottom: 25%;
-  }
-}
-@media screen and (max-width: 320px) {
-  .main-content {
-    height: 135vh;
-  }
+  margin-bottom: 2%;
 }
 .main-content__image {
   height: 100%;
@@ -253,8 +228,7 @@ body {
   color: #323232;
   height: 10vh;
   width: 57vw;
-  margin: 0;
-  margin-bottom: 4%;
+  margin: 5% unset 2% unset;
 }
 @media screen and (max-width: 768px) {
   .main-quote__words {
@@ -270,7 +244,7 @@ body {
 }
 .main-quote__speaker {
   font-size: 1rem;
-  font-family: "Avenir Demi" bold;
+  font-family: "Avenir Demi";
   color: #323232;
 }
 @media screen and (max-width: 768px) {
@@ -366,14 +340,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
   width: 100vw;
   background-color: #FAFAFA;
-}
-@media screen and (max-width: 320px) {
-  .gallery {
-    height: 230vh;
-  }
 }
 .gallery-top {
   width: 23%;
@@ -381,7 +349,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 11.5%;
-  padding-top: 4%;
+  padding-top: 2%;
   padding-bottom: 2%;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -390,7 +358,7 @@ body {
   .gallery-top {
     margin-left: 0;
     width: 35%;
-    padding-top: 5%;
+    padding-top: 3%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -413,7 +381,8 @@ body {
 }
 @media screen and (max-width: 320px) {
   .gallery-title {
-    margin-left: 5%;
+    font-size: 1.5rem;
+    margin: 2% 0 2% 6%;
   }
 }
 .gallery-container {
@@ -427,11 +396,13 @@ body {
           justify-content: space-evenly;
   height: 80%;
   width: 74%;
+  padding-bottom: 2%;
 }
 @media screen and (max-width: 768px) {
   .gallery-container {
     width: 100vw;
-    height: 90vh;
+    height: 70vh;
+    padding-bottom: 3%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -452,6 +423,7 @@ body {
 .gallery-images {
   height: 30%;
   width: 30%;
+  padding-bottom: 2%;
 }
 @media screen and (max-width: 320px) {
   .gallery-images {
@@ -462,7 +434,6 @@ body {
 
 /******************************** Comments *******************************/
 .comments {
-  height: 130vh;
   width: 100vw;
 }
 .comments-top {
@@ -471,7 +442,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 9%;
-  padding-top: 4%;
   margin-bottom: 0;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -480,7 +450,7 @@ body {
   .comments-top {
     margin-left: 0;
     width: 54%;
-    padding-top: 5%;
+    padding-top: 4%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -497,14 +467,16 @@ body {
 }
 @media screen and (max-width: 768px) {
   .comments-top__title {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
     margin-left: 5%;
     margin-top: 0;
   }
 }
 @media screen and (max-width: 320px) {
   .comments-top__title {
-    margin-left: 5%;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 6%;
   }
 }
 .comments-add {
@@ -521,6 +493,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 320px) {
+  .comments-add {
+    height: 38%;
+  }
+}
 .comments-add__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,6 +510,13 @@ body {
   height: 85%;
   border-bottom: 2px solid #E1E1E1;
 }
+@media screen and (max-width: 768px) {
+  .comments-add__form {
+    margin-left: 15%;
+    height: 100%;
+    width: 55%;
+  }
+}
 @media screen and (max-width: 320px) {
   .comments-add__form {
     width: 70%;
@@ -544,7 +528,21 @@ body {
   border-radius: 80%;
   position: relative;
   right: 13%;
-  top: 16%;
+  top: 6vh;
+}
+@media screen and (max-width: 768px) {
+  .comments-add__form-image {
+    top: 8vh;
+    height: 15%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments-add__form-image {
+    top: 7vh;
+    right: 20%;
+    height: 15%;
+    width: 15%;
+  }
 }
 .comments-add__form-text {
   font-size: 0.875rem;
@@ -559,9 +557,24 @@ body {
 .comments-add__form-box1 {
   padding-bottom: 4%;
 }
+@media screen and (max-width: 768px) {
+  .comments-add__form-box1 {
+    padding-bottom: 6%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments-add__form-box1 {
+    padding-bottom: 10%;
+  }
+}
 .comments-add__form-box2 {
   border-color: #E1E1E1;
   padding-bottom: 15%;
+}
+@media screen and (max-width: 320px) {
+  .comments-add__form-box2 {
+    padding-bottom: 30%;
+  }
 }
 .comments-add__form-button {
   -ms-flex-item-align: end;
@@ -571,12 +584,20 @@ body {
   padding-top: 3%;
   padding-bottom: 3%;
   color: #E1E1E1;
-  font-family: "Avenir Demi" bold;
+  font-family: "Avenir Demi";
   font-weight: 700;
+  border-radius: 5px;
 }
 @media screen and (max-width: 768px) {
   .comments-add__form-button {
-    width: 50%;
+    width: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments-add__form-button {
+    width: 100%;
+    padding-top: 6%;
+    padding-bottom: 6%;
   }
 }
 .comments-previous {
@@ -595,6 +616,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .comments-previous {
+    width: 50%;
+    margin-left: 30%;
+    margin-top: 3%;
+  }
+}
 @media screen and (max-width: 320px) {
   .comments-previous {
     width: 75%;
@@ -605,46 +633,96 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 40%;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 26vw;
+  margin-right: 39%;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 768px) {
+  .comments-previous__container {
+    width: 45vw;
+    margin-right: 40%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments-previous__container {
+    margin-left: 48%;
+    width: 100vw;
+  }
 }
 .comments-previous__container-image {
   height: 3.5vh;
   width: 2.5vw;
   background-color: #E1E1E1;
   border-radius: 80%;
+  margin-right: 5%;
+  position: relative;
+  top: 2vh;
+}
+@media screen and (max-width: 768px) {
+  .comments-previous__container-image {
+    width: 5vw;
+    height: 5vh;
+    top: 4vh;
+  }
+}
+@media screen and (max-width: 320px) {
+  .comments-previous__container-image {
+    height: 6vh;
+    width: 10vw;
+  }
 }
 .comments-previous__container-name {
   margin: 0;
+  margin-right: 3%;
+}
+@media screen and (max-width: 320px) {
+  .comments-previous__container-name {
+    font-size: 1rem;
+  }
 }
 .comments-previous__container-timestamp {
   margin: 0;
+  color: #AFAFAF;
 }
-.comments-previous__container-text {
+@media screen and (max-width: 320px) {
+  .comments-previous__container-timestamp {
+    font-size: 1rem;
+  }
+}
+.comments-previous__textContainer {
+  border-bottom: 2px solid #E1E1E1;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 320px) {
+  .comments-previous__textContainer {
+    margin-left: 7%;
+  }
+}
+.comments-previous__textContainer-text {
   margin: 0;
+  padding: 0;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 320px) {
+  .comments-previous__textContainer-text {
+    font-size: 0.875rem;
+  }
 }
 
 /******************************** FOOTER *******************************/
 .footer {
-  height: 55vh;
+  height: 45vh;
   width: 100vw;
   background-color: #323232;
   font-family: "Avenir";
   color: #FFFFFF;
-  margin-top: 140vh;
-}
-@media screen and (max-width: 768px) {
-  .footer {
-    margin-top: 160vh;
-  }
 }
 @media screen and (max-width: 320px) {
   .footer {
     height: 110vh;
-    margin-top: 270vh;
   }
 }
 .footer-top {
@@ -652,7 +730,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-left: 14.5%;
-  padding-top: 3%;
+  padding-top: 2%;
 }
 @media screen and (max-width: 768px) {
   .footer-top {
@@ -669,7 +747,7 @@ body {
   }
 }
 .footer-top__title {
-  margin-right: 7%;
+  margin-right: 8%;
   font-size: 1.7rem;
   font-family: "Avenir Bold";
 }
@@ -722,7 +800,7 @@ body {
 @media screen and (max-width: 768px) {
   .footer-content {
     width: 96vw;
-    margin-left: 0;
+    margin-left: 0.5%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -745,14 +823,14 @@ body {
   font-size: 0.75rem;
 }
 .footer-logo {
-  position: absolute;
-  right: 10%;
-  top: 510vh;
+  position: relative;
+  left: 80%;
+  bottom: 74%;
 }
 @media screen and (max-width: 768px) {
   .footer-logo {
     right: 5%;
-    top: 511.5vh;
+    bottom: 87.5%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -767,7 +845,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer-copywright {
-    margin-left: 3%;
+    margin-left: 3.3%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -775,7 +853,7 @@ body {
     margin-left: 5%;
   }
 }
-/*# sourceMappingURL=main.css.map */d (max-width: 320px) {
+/*# sourceMappingURL=main.css.map */ screen and (max-width: 320px) {
   .footer-copywright {
     margin-left: 5%;
   }

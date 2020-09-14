@@ -1,52 +1,48 @@
-const urlComments = "https://project-1-api.herokuapp.com/comments?api_key=4f7a0fd5-c646-44d7-b418-094a97a9b246";
-const urlDelete = "https://project-1-api.herokuapp.com/comments/:commendId?api_key=4f7a0fd5-c646-44d7-b418-094a97a9b246"
+const urlComments = "https://project-1-api.herokuapp.com/comments?api_key=49bb7add-b059-47f6-ad51-38bad97ca9ba";
+const urlDelete = "https://project-1-api.herokuapp.com/comments/:commendId?api_key=49bb7add-b059-47f6-ad51-38bad97ca9ba"
 
 
-axios
+function ax() { axios
 .get(urlComments)
 .then(res => {
-   res.data.forEach(comment => {
+   res.data.reverse().forEach(comment => {
       createComment(comment);
    })
 })
 .catch(err => console.log(err))
+}
 
-// axios
-// .post(urlComments, {
-   
-// })
-// .then(function (response) {
-//    console.log(response.data);
-//  })
-// .catch(function (error) {
-//    console.log(error);
-//  });
+ax();
+
 
 const clear = () => {
    document.querySelector('.comments-previous').innerText = '';
  }
 
-let posts = [];
 
 const form = document.querySelector('.comments-add__form');
 form.addEventListener('submit', (e) => {
             e.preventDefault();
-            newFunc();
-            // clear();
+            axios
+               .post(urlComments, {
+                  name: form.name.value,
+                  comment: form.comment.value
+               })
+               .then(function (response) {
+                  console.log(response.data);
+                  clear();
+                  ax();
+               })
+               .catch(function (error) {
+                  console.log(error);
+               });
          })
-
-
-function newFunc() {
-   const newName = form.querySelector('.comments-add__form-box1').value;
-   const newComment = form.querySelector('.comments-add__form-box2').value;
-   form.append(newName);
-   form.append(newComment);
-      }
 
 
     function createComment(comment) {
        const previous = document.querySelector('.comments-previous');
        const commentContainer = document.createElement('div');
+       const textContainer = document.createElement('div');
        const commentImage = document.createElement('img');
        const commentName = document.createElement('h3');
        const commentTimestamp = document.createElement('h4');
@@ -55,14 +51,16 @@ function newFunc() {
        commentTimestamp.innerText = comment.timestamp;
        commentText.innerText = comment.comment;
        previous.appendChild(commentContainer);
+       previous.appendChild(textContainer);
        commentContainer.appendChild(commentImage);
        commentContainer.appendChild(commentName);
        commentContainer.appendChild(commentTimestamp);
-       commentContainer.appendChild(commentText);
+       textContainer.appendChild(commentText);
        commentContainer.classList.add('comments-previous__container');
+       textContainer.classList.add('comments-previous__textContainer')
        commentImage.classList.add('comments-previous__container-image');
        commentTimestamp.classList.add('comments-previous__container-timestamp');
        commentName.classList.add('comments-previous__container-name');
-       commentText.classList.add('comments-previous__container-text');
+       commentText.classList.add('comments-previous__textContainer-text');
     }
 

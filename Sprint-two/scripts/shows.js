@@ -34,9 +34,9 @@ function createCard(show) {
     const gridLocation = document.createElement("p");
     const gridButton = document.createElement('button');
     gridDates.innerText = show.date;
-    gridVenue.innerText = show.location;
-    gridLocation.innerText = show.place;
-    gridButton.innerText = "Buy Tickets";
+    gridVenue.innerText = show.place;
+    gridLocation.innerText = show.location;
+    gridButton.innerText = "BUY TICKETS";
     grid.appendChild(gridContainer)
     gridContainer.appendChild(gridDates).value;
     gridContainer.appendChild(gridVenue).value;
